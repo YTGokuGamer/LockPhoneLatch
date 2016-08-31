@@ -44,7 +44,7 @@ public class MyService extends Service {
     @Override
     public void onCreate()
     {
-        Log.d("Myservice","Paso por on create cont:  "+cont);
+        Log.d("Myservice","Paso por oncreate cont:  "+cont);
         //ccc
         cont=0;
         registerScreenOffReceiver();
