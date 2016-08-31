@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.symdev.lockphonelatch.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parear"
+        android:id="@+id/btnpair"
+        android:layout_below="@+id/txtoperlatch"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittoken"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btnpair"
+        android:layout_toEndOf="@+id/btnpair"
+        android:layout_alignBottom="@+id/btnpair"
+        android:layout_marginLeft="10dip" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESPAREAR"
+        android:id="@+id/btnunpair"
+        android:layout_below="@+id/btnpair"
+        android:layout_alignStart="@+id/btnpair"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar"
+        android:id="@+id/btnenable"
+        android:layout_below="@+id/txtpermisos"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desactivar"
+        android:id="@+id/btndisable"
+        android:layout_below="@+id/txtpermisos"
+        android:layout_toEndOf="@+id/btnenable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Operaciones con Latch"
+        android:id="@+id/txtoperlatch"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Permisos de administrador"
+        android:id="@+id/txtpermisos"
+        android:layout_below="@+id/btnunpair"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
